@@ -24,7 +24,7 @@ On Ubuntu/Mint/Popos/Zorin/Elementary run
 ```
 sh ubuntu-dotfiles-setup.sh
 ```
-## Manual
+## Manual Installation
 To Manually Install my Personal Hyprland Dotfiles run
 ```
 git clone https://github.com/Kulwinderpal/dotfiles.git && cd dotfiles && mkdir -p ~/.config/hypr ~/.config/waybar ~/.config/rofi && mv hyprland.conf ~/.config/hypr && mv style.css ~/.config/waybar && mv config.jsonc ~/.config/waybar && mv config.rasi ~/.config/rofi
