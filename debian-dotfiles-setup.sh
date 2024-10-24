@@ -29,7 +29,7 @@ git submodule update --init
 autoreconf -i
 
 # Compile Hyprpicker
-sudo apt install cmake pango cairo-5c libhyprutils0 pango1.0-tools
+sudo apt install cmake pango libcairo2-dev libhyprutils0 pango1.0-tools
 git clone https://github.com/hyprwm/hyprpicker.git ~/
 cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
 cmake --build ./build --config Release --target hyprpicker -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
