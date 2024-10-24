@@ -32,4 +32,4 @@ git clone https://github.com/Kulwinderpal/dotfiles.git && cd dotfiles && mkdir -
 
 
 ## Credits
-Credits to  [Rizwanelansyah](https://github.com/Rizwanelansyah/.dotfiles) for the Waybar Config
+Credits to  [Rizwanelansyah](https://github.com/Rizwanelansyah/.dotfiles) for the Waybar and SwayNC Config
