@@ -1,4 +1,6 @@
 # Preview
+![2024-10-23-211001_hyprshot](https://github.com/user-attachments/assets/858cf4ac-6056-4878-8c73-39f20538c8d5)
+
 
 # Installation
 To Install my Personal Hyprland Dotfiles on Arch Linux run
