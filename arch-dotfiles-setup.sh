@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install the Prerequisitories
-sudo pacman -Sy git hyprland xdg-desktop-portal-hyprland yazi rofi-wayland waybar hyprpaper swaync polkit-kde-agent hyprpicker
+sudo pacman -Sy git hyprland xdg-desktop-portal-hyprland yazi rofi-wayland waybar hyprpaper swaync polkit-kde-agent hyprpicker alacritty
 
 # Install the AUR Packages
 git clone https://aur.archlinux.org/waypaper.git ~/
