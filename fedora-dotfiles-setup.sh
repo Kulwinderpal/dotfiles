@@ -3,6 +3,7 @@
 sudo dnf install git hyprland xdg-desktop-portal-hyprland rofi-wayland waybar hyprpaper polkit-kde hyprpicker alacritty cargo
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
+cargo install --locked yazi-fm yazi-cli
 
 # Install Packages from Copr Repos
 sudo dnf copr enable solopasha/hyprland
