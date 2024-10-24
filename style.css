@@ -22,107 +22,134 @@
 @define-color yellow #e2b86b;
 
 * {
-  font-family: "JetBrainsMono Nerd Font", monospace;
-  transition: none;
-  font-size: 12px;
-}
-
-.control-center {
-  opacity: 1;
-  background: @bg;
-  border: 2px solid @bg2;
-  border-radius: 20;
-}
-
-.notification-row {
-  all: unset;
-}
-
-.notification {
-  outline: none;
-  margin: 0px;
-  padding: 5px 1em;
-  background: @bg1;
-  box-shadow: none;
-  border: none;
-  border-radius: 10px;
-}
-
-.notification-content {
-  all: unset;
-  background: @bg1;
-}
-
-.notification-action,
-.notification-default-action {
-  all: unset;
-  border-radius: 5px;
-  font-size: 10px;
-}
-
-.notification-action:hover,
-.notification-default-action:hover {
-  background: @green;
-  color: @black;
-}
-
-.close-button {
-  background: transparent;
-  color: @fg;
-  border-radius: 0;
-  padding: 4px;
-  margin-top: -5px;
-  margin-right: -5px;
-}
-
-.close-button:hover {
-  color: @red;
-  background: transparent;
-}
-
-.summary {
-  font-size: 12px;
-  font-weight: 600;
-  color: @fg;
-}
-
-.time {
-  font-size: 8px;
-  font-weight: 400;
-  color: @light_grey;
-}
-
-button {
-  all: unset;
-  background: @bg1;
-  padding: 4px 1em;
-  border-radius: 10px;
-  color: @fg;
-}
-
-button:hover {
-  background: @blue;
-  color: @black;
-}
-
-switch {
-  all: unset;
-  background: @bg2;
-  padding: 5px;
-  border-radius: 10px;
-}
-
-switch:checked {
-  background: @blue;
-}
-
-switch slider {
-  border-radius: 0;
-  border: none;
+  font-family: "ComicNeue";
+  font-size: 14px;
   margin: 0;
-  border-radius: 5px;
-  background: @bg;
+  padding: 0;
 }
-switch:checked slider {
-  background: @bg2;
+
+window#waybar {
+  background: @bg;
+  color: @fg;
+  border-radius: 5px;
+  border: none;
+  padding: 0 2px;
+}
+
+#workspaces {
+  margin-left: .5em;
+  padding: .2em;
+}
+
+#workspaces > button {
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 0 .4em;
+  margin: 0;
+}
+
+#workspaces > button.active {
+  font-size: 1em;
+  color: @bg1;
+  background: @blue;
+}
+
+#window {
+  background: @bg1;
+  padding: 0 1em;
+  border-radius: 1em;
+  margin:  5px;
+}
+
+#clock,
+#backlight.value,
+#network.value,
+#memory.value,
+#cpu.value,
+#battery.value {
+  font-size: 1em;
+  margin: 5px .5em 5px 0;
+  padding: 0 1em 0 .5em;
+  border-radius: 0 1em 1em 0;
+  background: @bg1;
+}
+
+#custom-clock-icon,
+#backlight.icon,
+#network.icon,
+#memory.icon,
+#cpu.icon,
+#battery.icon {
+  font-size: 1em;
+  margin: 5px 0 5px .5em;
+  padding: 0 .5em 0 .5em;
+  border-radius: 1em 0 0 1em;
+  background: @fg;
+  color: @bg1;
+}
+#custom-clock-icon {
+  background: @green;
+}
+#backlight.icon {
+  background: @yellow;
+}
+#network.icon {
+  background: @purple;
+}
+#memory.icon {
+  background: @red;
+}
+#cpu.icon {
+  background: @cyan;
+}
+
+#battery.icon {
+  background: @blue;
+}
+#battery.icon.warning {
+  background: @yellow;
+}
+#battery.icon.critical {
+  background: @red;
+}
+#battery.icon.charging {
+  background: @green;
+}
+
+#clock {
+  color: @green;
+}
+#backlight.value {
+  color: @yellow;
+}
+#network.value {
+  color: @purple;
+}
+#cpu.value {
+  color: @cyan;
+}
+#memory.value {
+  color: @red;
+}
+
+#battery.value {
+  color: @blue;
+}
+#battery.value.warning {
+  color: @yellow;
+}
+#battery.value.critical {
+  color: @red;
+}
+#battery.value.charging {
+  color: @green;
+}
+
+#custom-notification {
+  border-radius: 1em;
+  font-size: 1em;
+  margin: 5px 0 5px .5em;
+  padding: 0 .5em 0 .5em;
+  background: @yellow;
+  color: @bg1;
 }
